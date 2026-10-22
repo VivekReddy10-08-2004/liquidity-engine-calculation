@@ -1,0 +1,4 @@
+organization_id,name,account_type,currency,available_balance,ledger_balance,as_of_at,freshness,source_system,source_identifier,source_version
+10000000-0000-4000-8000-000000000001,Primary Operating Account,operating,USD,2100000.00,2112500.00,2026-10-21T13:00:00Z,fresh,demo_bank,operating-001,2026-10-21T13:00:00Z
+10000000-0000-4000-8000-000000000001,Treasury Reserve,treasury_reserve,USD,850000.00,850000.00,2026-10-21T13:00:00Z,fresh,demo_bank,reserve-001,2026-10-21T13:00:00Z
+

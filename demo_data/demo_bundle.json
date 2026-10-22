@@ -1,0 +1,81 @@
+{
+  "organization_id": "10000000-0000-4000-8000-000000000001",
+  "accounts": [
+    {
+      "organization_id": "10000000-0000-4000-8000-000000000001",
+      "name": "Primary Operating Account",
+      "account_type": "operating",
+      "currency": "USD",
+      "available_balance": "2100000.00",
+      "ledger_balance": "2112500.00",
+      "as_of_at": "2026-10-21T13:00:00Z",
+      "freshness": "fresh",
+      "source_system": "demo_bank",
+      "source_identifier": "operating-001",
+      "source_version": "2026-10-21T13:00:00Z"
+    },
+    {
+      "organization_id": "10000000-0000-4000-8000-000000000001",
+      "name": "Treasury Reserve",
+      "account_type": "treasury_reserve",
+      "currency": "USD",
+      "available_balance": "850000.00",
+      "ledger_balance": "850000.00",
+      "as_of_at": "2026-10-21T13:00:00Z",
+      "freshness": "fresh",
+      "source_system": "demo_bank",
+      "source_identifier": "reserve-001",
+      "source_version": "2026-10-21T13:00:00Z"
+    }
+  ],
+  "obligations": [
+    {
+      "organization_id": "10000000-0000-4000-8000-000000000001",
+      "obligation_type": "payroll",
+      "amount": "360000.00",
+      "currency": "USD",
+      "due_date": "2026-10-30",
+      "certainty": "confirmed",
+      "status": "scheduled",
+      "source_system": "demo_payroll",
+      "source_identifier": "payroll-2026-10-30",
+      "source_version": "v1",
+      "source_updated_at": "2026-10-21T12:30:00Z",
+      "included_in_reserve": true,
+      "description": "Payroll and payroll taxes"
+    }
+  ],
+  "policies": [
+    {
+      "id": "10000000-0000-4000-8000-000000000010",
+      "organization_id": "10000000-0000-4000-8000-000000000001",
+      "version": 1,
+      "forecast_horizon_days": 30,
+      "cash_floor_amount": "90000.00",
+      "payroll_cycles_to_reserve": 2,
+      "ap_reserve_window_days": 30,
+      "fixed_uncertainty_buffer": "169000.00",
+      "variable_buffer_percent": "20.0000",
+      "buffer_strategy": "maximum",
+      "approval_threshold": "1000000.00",
+      "effective_at": "2026-10-21T13:00:00Z",
+      "created_by": "10000000-0000-4000-8000-000000000002"
+    }
+  ],
+  "recommendation_snapshots": [
+    {
+      "organization_id": "10000000-0000-4000-8000-000000000001",
+      "policy_id": "10000000-0000-4000-8000-000000000010",
+      "action": "allocate",
+      "recommended_amount": "1100000.00",
+      "required_liquidity": "1000000.00",
+      "available_cash": "2100000.00",
+      "confidence": "high",
+      "input_snapshot": {"demo": true, "source_cutoff": "2026-10-21T13:00:00Z"},
+      "rules_version": "v1.0.0",
+      "generated_at": "2026-10-21T13:05:00Z",
+      "status": "pending"
+    }
+  ]
+}
+

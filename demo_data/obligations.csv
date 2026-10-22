@@ -1,0 +1,6 @@
+organization_id,obligation_type,amount,currency,due_date,certainty,status,source_system,source_identifier,source_version,source_updated_at,included_in_reserve,description
+10000000-0000-4000-8000-000000000001,payroll,360000.00,USD,2026-10-30,confirmed,scheduled,demo_payroll,payroll-2026-10-30,v1,2026-10-21T12:30:00Z,true,Payroll and payroll taxes
+10000000-0000-4000-8000-000000000001,accounts_payable,214000.00,USD,2026-11-05,confirmed,scheduled,demo_ap,ap-batch-2026-11-05,v1,2026-10-21T12:00:00Z,true,Approved accounts payable
+10000000-0000-4000-8000-000000000001,tax,75000.00,USD,2026-11-10,confirmed,scheduled,demo_tax,tax-2026-q4,v1,2026-10-21T11:00:00Z,true,Scheduled tax payment
+10000000-0000-4000-8000-000000000001,card_settlement,92000.00,USD,2026-10-25,expected,pending,demo_cards,cards-2026-10-25,v1,2026-10-21T01:00:00Z,true,Expected card settlement
+
